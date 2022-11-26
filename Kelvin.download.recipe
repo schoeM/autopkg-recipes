@@ -30,7 +30,6 @@
                 <string>https://creativeforce.io</string>
                 <key>re_pattern</key>
                 <string>https://download.creativeforce.io/released-files.3x/prod/kelvin/mac/Kelvin-(\d(\.\d)+)-mac\.pkg</string>
-                <key>re_flags</key>
                 <key>result_output_var_name</key>
                 <string>url</string>
             </dict>
