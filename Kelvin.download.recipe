@@ -8,25 +8,41 @@
 	<string>Downloads the latest version of Kelvin.</string>
 	<key>Identifier</key>
 	<string>de.schoeM.download.Kelvin</string>
+	
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
 		<string>Kelvin</string>
 	</dict>
+	
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
+	
+	
 	<key>Process</key>
-	<array>
+    <array>
+        <dict>
+            <key>Processor</key>
+            <string>URLTextSearcher</string>
+            <key>Arguments</key>
+            <dict>
+                <key>url</key>
+                <string>https://creativeforce.io</string>
+                <key>re_pattern</key>
+                <string>https://download.creativeforce.io/released-files.3x/prod/kelvin/mac/Kelvin-(\d(\.\d)+)-mac\.pkg</string>
+                <key>re_flags</key>
+                <key>result_output_var_name</key>
+                <string>url</string>
+            </dict>
+        </dict>
 		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>filename</key>
-				<string>%NAME%.pkg</string>
-				<key>url</key>
-				<string>https://download\.creativeforce\.io/released-files\.3x/prod/kelvin/mac/Kelvin-(\d(\.\d)+)-mac\.pkg</string>
-			</dict>
 			<key>Processor</key>
 			<string>URLDownloader</string>
+			<key>Arguments</key>
+			<dict>
+                <key>url</key>
+                <string>https://download.creativeforce.io/released-files\.3x/prod/kelvin/mac/Kelvin-%url%</string>
+			</dict>
 		</dict>
 		<dict>
 			<key>Processor</key>
@@ -47,6 +63,6 @@
 			<key>Processor</key>
 			<string>CodeSignatureVerifier</string>
 		</dict>
-	</array>
+	</array>	
 </dict>
 </plist>
