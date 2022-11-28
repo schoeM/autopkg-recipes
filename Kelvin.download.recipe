@@ -21,7 +21,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>re_pattern</key>
-				<string>https://download.creativeforce.io/released-files.3x/prod/kelvin/mac/Kelvin-(\d(\.\d)+)-mac\.pkg</string>
+				<string>https://download.creativeforce.io/released-files.3x/prod/kelvin/mac/Kelvin-(\d\.\d{1,2}\.\d{1,2})-mac\.pkg</string>
 				<key>url</key>
 				<string>https://download.creativeforce.io/released-files.3x/prod/kelvin/mac</string>
 			</dict>
