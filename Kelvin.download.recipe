@@ -5,13 +5,13 @@
 	<key>Comment</key>
 	<string>Created with Recipe Robot v2.2.0 (https://github.com/homebysix/recipe-robot)</string>
 	<key>Description</key>
-	<string>Downloads the latest version of Hue.</string>
+	<string>Downloads the latest version of Kelvin.</string>
 	<key>Identifier</key>
-	<string>de.schoeM.download.Hue</string>
+	<string>de.schoeM.download.Kelvin</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
-		<string>Hue</string>
+		<string>Kelvin</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
